@@ -1,0 +1,31 @@
+scalable event-driven microservice/
+├── database/
+|     ├── dbConnection.js         # MongoDB connection
+└── models/
+│       └── log.models.js       # Logs schema
+│           
+│
+├── database/
+│   └── models/
+│       └── log.models.js       # Logs schema
+│
+├── middleware/
+│   ├── catchError.js
+│   └── globalError.js
+│
+├── utils/
+│   └── appError.js
+│
+├── modules/
+│   └── logs/
+│       ├── router.js           # Express routes
+│       └── controller.js       # Express controller
+│
+├── kafka/
+│   ├── consumer.js             # Kafka consumer
+│   └── producer.js             # Kafka producer
+│
+├── index.js                    # Main app entry
+├── .env                        # Environment variables
+├── .gitignore
+└── docker-compose.yml
